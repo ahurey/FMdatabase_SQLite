@@ -14,6 +14,13 @@
 		B29933BB1AC1463C0041F34D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29933BA1AC1463C0041F34D /* Images.xcassets */; };
 		B29933BE1AC1463C0041F34D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29933BC1AC1463C0041F34D /* LaunchScreen.xib */; };
 		B29933CA1AC1463C0041F34D /* SQLiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B29933C91AC1463C0041F34D /* SQLiteTests.m */; };
+		B29933DF1AC1467B0041F34D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B29933D51AC1467B0041F34D /* FMDatabase.m */; };
+		B29933E01AC1467B0041F34D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B29933D71AC1467B0041F34D /* FMDatabaseAdditions.m */; };
+		B29933E11AC1467B0041F34D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = B29933D91AC1467B0041F34D /* FMDatabasePool.m */; };
+		B29933E21AC1467B0041F34D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B29933DB1AC1467B0041F34D /* FMDatabaseQueue.m */; };
+		B29933E31AC1467B0041F34D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B29933DE1AC1467B0041F34D /* FMResultSet.m */; };
+		B29933E51AC146910041F34D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B29933E41AC146910041F34D /* libsqlite3.dylib */; };
+		B29933E91AC148030041F34D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B29933E81AC148030041F34D /* DBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,20 @@
 		B29933C31AC1463C0041F34D /* SQLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29933C81AC1463C0041F34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B29933C91AC1463C0041F34D /* SQLiteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLiteTests.m; sourceTree = "<group>"; };
+		B29933D41AC1467B0041F34D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		B29933D51AC1467B0041F34D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		B29933D61AC1467B0041F34D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		B29933D71AC1467B0041F34D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		B29933D81AC1467B0041F34D /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		B29933D91AC1467B0041F34D /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		B29933DA1AC1467B0041F34D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		B29933DB1AC1467B0041F34D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		B29933DC1AC1467B0041F34D /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		B29933DD1AC1467B0041F34D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		B29933DE1AC1467B0041F34D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		B29933E41AC146910041F34D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsqlite3.dylib; sourceTree = "<group>"; };
+		B29933E71AC148030041F34D /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		B29933E81AC148030041F34D /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29933E51AC146910041F34D /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +103,8 @@
 		B29933AC1AC1463C0041F34D /* SQLite */ = {
 			isa = PBXGroup;
 			children = (
+				B29933E61AC147E60041F34D /* SubClass */,
+				B29933D31AC146610041F34D /* FMDB */,
 				B29933B11AC1463C0041F34D /* AppDelegate.h */,
 				B29933B21AC1463C0041F34D /* AppDelegate.m */,
 				B29933B41AC1463C0041F34D /* ViewController.h */,
@@ -117,6 +141,34 @@
 				B29933C81AC1463C0041F34D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B29933D31AC146610041F34D /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				B29933E41AC146910041F34D /* libsqlite3.dylib */,
+				B29933D41AC1467B0041F34D /* FMDatabase.h */,
+				B29933D51AC1467B0041F34D /* FMDatabase.m */,
+				B29933D61AC1467B0041F34D /* FMDatabaseAdditions.h */,
+				B29933D71AC1467B0041F34D /* FMDatabaseAdditions.m */,
+				B29933D81AC1467B0041F34D /* FMDatabasePool.h */,
+				B29933D91AC1467B0041F34D /* FMDatabasePool.m */,
+				B29933DA1AC1467B0041F34D /* FMDatabaseQueue.h */,
+				B29933DB1AC1467B0041F34D /* FMDatabaseQueue.m */,
+				B29933DC1AC1467B0041F34D /* FMDB.h */,
+				B29933DD1AC1467B0041F34D /* FMResultSet.h */,
+				B29933DE1AC1467B0041F34D /* FMResultSet.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		B29933E61AC147E60041F34D /* SubClass */ = {
+			isa = PBXGroup;
+			children = (
+				B29933E71AC148030041F34D /* DBManager.h */,
+				B29933E81AC148030041F34D /* DBManager.m */,
+			);
+			name = SubClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +272,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B29933B61AC1463C0041F34D /* ViewController.m in Sources */,
+				B29933E11AC1467B0041F34D /* FMDatabasePool.m in Sources */,
 				B29933B31AC1463C0041F34D /* AppDelegate.m in Sources */,
+				B29933E91AC148030041F34D /* DBManager.m in Sources */,
+				B29933E21AC1467B0041F34D /* FMDatabaseQueue.m in Sources */,
 				B29933B01AC1463C0041F34D /* main.m in Sources */,
+				B29933DF1AC1467B0041F34D /* FMDatabase.m in Sources */,
+				B29933E31AC1467B0041F34D /* FMResultSet.m in Sources */,
+				B29933E01AC1467B0041F34D /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +405,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SQLite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -357,6 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SQLite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
